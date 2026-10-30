@@ -4,21 +4,33 @@
 
 <p align="center">Plataforma de enquetes com autenticação, perfis de acesso e persistência em SQL Server.</p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/C%23-C52E36?style=flat-square" alt="C#">
-  <img src="https://img.shields.io/badge/Identity-24272E?style=flat-square" alt="Identity">
-  <img src="https://img.shields.io/badge/SQL%20Server-24272E?style=flat-square" alt="SQL Server">
-</p>
+<p align="center"><img src="assets/docs/tags.svg" alt="C# · Identity · SQL Server" width="72%"></p>
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
 
 ---
 
-## Visão geral
+<a id="explore-o-projeto"></a>
+
+![Explore o projeto](assets/docs/section-01.svg)
+
+![Mapa visual dos arquivos e responsabilidades](assets/docs/map.svg)
+
+| Área | O que você encontra | Acesso direto |
+|---|---|---|
+| **Enquetes** | Ações relacionadas às enquetes. | [Abrir enquetes →](ProjetoPWEnquete/Controllers/EnqueteController.cs) |
+| **Banco de dados** | Contexto de persistência da aplicação. | [Abrir banco de dados →](ProjetoPWEnquete/Data/AppDbContext.cs) |
+| **Conta** | Ações relacionadas ao acesso dos usuários. | [Abrir conta →](ProjetoPWEnquete/Controllers/AccountController.cs) |
+
+<a id="visão-geral"></a>
+
+![Visão geral](assets/docs/section-02.svg)
 
 O sistema conta com controladores especializados para autenticação (AccountController), administração de enquetes (AdminEnquete), participação do usuário (UserEnquetesController) e exibição geral (EnqueteController), apoiados por um histórico detalhado de migrações do **Entity Framework Core**.
 
-## Recursos
+<a id="recursos"></a>
+
+![Recursos](assets/docs/section-03.svg)
 
 | Recurso | Como funciona |
 |---|---|
@@ -48,7 +60,7 @@ flowchart LR
 ```text
 ProjetoPWEnquete/
 ├── assets/
-│   └── project-animal.png          Emblema do projeto
+│   └── banner-v2.png               Banner do projeto
 ├── ProjetoPWEnquete/
 │   ├── Controllers/                        Account, AdminEnquete, Enquete, Home e UserEnquetes
 │   ├── Data/AppDbContext.cs                Contexto relacional do Entity Framework Core
@@ -61,7 +73,9 @@ ProjetoPWEnquete/
 
 </details>
 
-## Como executar
+<a id="como-executar"></a>
+
+![Como executar](assets/docs/section-04.svg)
 
 1. Clone o repositório:
    ```powershell
