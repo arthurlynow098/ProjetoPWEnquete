@@ -4,7 +4,7 @@
 
 <p align="center">Plataforma de enquetes com autenticação, perfis de acesso e persistência em SQL Server.</p>
 
-<p align="center"><img src="assets/docs/tags.svg" alt="C# · Identity · SQL Server" width="72%"></p>
+<p align="center"><img src="assets/docs/tags.svg" alt="C# · Identity · SQL Server" width="100%"></p>
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
 
@@ -16,11 +16,12 @@
 
 ![Mapa visual dos arquivos e responsabilidades](assets/docs/map.svg)
 
-| Área | O que você encontra | Acesso direto |
-|---|---|---|
-| **Enquetes** | Ações relacionadas às enquetes. | [Abrir enquetes →](ProjetoPWEnquete/Controllers/EnqueteController.cs) |
-| **Banco de dados** | Contexto de persistência da aplicação. | [Abrir banco de dados →](ProjetoPWEnquete/Data/AppDbContext.cs) |
-| **Conta** | Ações relacionadas ao acesso dos usuários. | [Abrir conta →](ProjetoPWEnquete/Controllers/AccountController.cs) |
+<table width="100%">
+<tr><th align="left">Área</th><th align="left">O que você encontra</th><th align="left">Acesso direto</th></tr>
+<tr><td><strong>Enquetes</strong></td><td>Ações relacionadas às enquetes.</td><td><a href="ProjetoPWEnquete/Controllers/EnqueteController.cs">Abrir enquetes →</a></td></tr>
+<tr><td><strong>Banco de dados</strong></td><td>Contexto de persistência da aplicação.</td><td><a href="ProjetoPWEnquete/Data/AppDbContext.cs">Abrir banco de dados →</a></td></tr>
+<tr><td><strong>Conta</strong></td><td>Ações relacionadas ao acesso dos usuários.</td><td><a href="ProjetoPWEnquete/Controllers/AccountController.cs">Abrir conta →</a></td></tr>
+</table>
 
 <a id="visão-geral"></a>
 
