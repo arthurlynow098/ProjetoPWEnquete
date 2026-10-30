@@ -1,8 +1,6 @@
 <p align="center">
-  <img src="assets/project-animal.png" alt="Emblema de ProjetoPWEnquete" width="144" height="144">
+  <img src="assets/banner-v2.png" alt="ProjetoPWEnquete" width="100%">
 </p>
-
-<h1 align="center">ProjetoPWEnquete</h1>
 
 <p align="center">Plataforma de enquetes com autenticação, perfis de acesso e persistência em SQL Server.</p>
 
