@@ -1,44 +1,45 @@
 <p align="center">
-  <img src="assets/banner-v2.png" alt="ProjetoPWEnquete" width="100%">
+  <img src="assets/identity/banner.png" alt="ProjetoPWEnquete" width="100%">
 </p>
 
 <p align="center">Plataforma de enquetes com autenticação, perfis de acesso e persistência em SQL Server.</p>
 
-<p align="center"><img src="assets/docs/tags.svg" alt="C# · Identity · SQL Server" width="100%"></p>
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
 
----
+<p align="center"><img src="assets/identity/divider.svg" alt="" width="100%"></p>
 
 <a id="explore-o-projeto"></a>
 
-![Explore o projeto](assets/docs/section-01.svg)
+## Por onde começar
 
-![Mapa visual dos arquivos e responsabilidades](assets/docs/map.svg)
 
-<table width="100%">
-<tr><th align="left">Área</th><th align="left">O que você encontra</th><th align="left">Acesso direto</th></tr>
-<tr><td><strong>Enquetes</strong></td><td>Ações relacionadas às enquetes.</td><td><a href="ProjetoPWEnquete/Controllers/EnqueteController.cs">Abrir enquetes →</a></td></tr>
-<tr><td><strong>Banco de dados</strong></td><td>Contexto de persistência da aplicação.</td><td><a href="ProjetoPWEnquete/Data/AppDbContext.cs">Abrir banco de dados →</a></td></tr>
-<tr><td><strong>Conta</strong></td><td>Ações relacionadas ao acesso dos usuários.</td><td><a href="ProjetoPWEnquete/Controllers/AccountController.cs">Abrir conta →</a></td></tr>
-</table>
+- **[Enquetes](ProjetoPWEnquete/Controllers/EnqueteController.cs)** — Ações relacionadas às enquetes.
+- **[Banco de dados](ProjetoPWEnquete/Data/AppDbContext.cs)** — Contexto de persistência da aplicação.
+- **[Conta](ProjetoPWEnquete/Controllers/AccountController.cs)** — Ações relacionadas ao acesso dos usuários.
+
 
 <a id="visão-geral"></a>
 
-![Visão geral](assets/docs/section-02.svg)
+## Visão geral
 
 O sistema conta com controladores especializados para autenticação (AccountController), administração de enquetes (AdminEnquete), participação do usuário (UserEnquetesController) e exibição geral (EnqueteController), apoiados por um histórico detalhado de migrações do **Entity Framework Core**.
 
 <a id="recursos"></a>
 
-![Recursos](assets/docs/section-03.svg)
+## Recursos
 
-| Recurso | Como funciona |
-|---|---|
-| Painel Administrativo (AdminEnquete) | Criação, edição, ativação e encerramento de enquetes com acompanhamento de votos. |
-| Área do Participante (UserEnquetesController) | Fluxo dedicado para visualização de enquetes disponíveis e registro seguro do voto. |
-| Autenticação e Perfis (AccountController) | Gerenciamento de contas e sessões integrado ao banco de dados via Identity / EF Core. |
-| Persistência SQL Server (AppDbContext) | Mapeamento relacional completo com mais de 10 migrações incrementais documentando a evolução do schema. |
+**Painel Administrativo (AdminEnquete)**<br>
+Criação, edição, ativação e encerramento de enquetes com acompanhamento de votos.
+
+**Área do Participante (UserEnquetesController)**<br>
+Fluxo dedicado para visualização de enquetes disponíveis e registro seguro do voto.
+
+**Autenticação e Perfis (AccountController)**<br>
+Gerenciamento de contas e sessões integrado ao banco de dados via Identity / EF Core.
+
+**Persistência SQL Server (AppDbContext)**<br>
+Mapeamento relacional completo com mais de 10 migrações incrementais documentando a evolução do schema.
 
 <details>
 <summary>Arquitetura</summary>
@@ -61,7 +62,7 @@ flowchart LR
 ```text
 ProjetoPWEnquete/
 ├── assets/
-│   └── banner-v2.png               Banner do projeto
+│   └── identity/banner.png               Banner do projeto
 ├── ProjetoPWEnquete/
 │   ├── Controllers/                        Account, AdminEnquete, Enquete, Home e UserEnquetes
 │   ├── Data/AppDbContext.cs                Contexto relacional do Entity Framework Core
@@ -76,7 +77,7 @@ ProjetoPWEnquete/
 
 <a id="como-executar"></a>
 
-![Como executar](assets/docs/section-04.svg)
+## Como executar
 
 1. Clone o repositório:
    ```powershell
@@ -90,7 +91,7 @@ ProjetoPWEnquete/
    dotnet run --project ProjetoPWEnquete/ProjetoPWEnquete.csproj
    ```
 
----
+<p align="center"><img src="assets/identity/divider.svg" alt="" width="100%"></p>
 
 <p align="center">
   <a href="https://github.com/arthurlynow098">GitHub</a> &nbsp;·&nbsp;
