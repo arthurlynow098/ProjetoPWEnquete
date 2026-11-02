@@ -1,13 +1,11 @@
-<p align="center">
-  <img src="assets/identity/banner.png" alt="ProjetoPWEnquete" width="100%">
-</p>
+<p align="center"><img src="assets/identity-v2/banner.png" alt="Projeto Enquete — Autenticação · votação · persistência" width="100%"></p>
 
 <p align="center">Plataforma de enquetes com autenticação, perfis de acesso e persistência em SQL Server.</p>
 
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
 
-<p align="center"><img src="assets/identity/divider.svg" alt="" width="100%"></p>
+---
 
 <a id="explore-o-projeto"></a>
 
@@ -21,7 +19,7 @@
 
 <a id="visão-geral"></a>
 
-## Visão geral
+## Sobre o projeto
 
 O sistema conta com controladores especializados para autenticação (AccountController), administração de enquetes (AdminEnquete), participação do usuário (UserEnquetesController) e exibição geral (EnqueteController), apoiados por um histórico detalhado de migrações do **Entity Framework Core**.
 
@@ -41,8 +39,8 @@ Gerenciamento de contas e sessões integrado ao banco de dados via Identity / EF
 **Persistência SQL Server (AppDbContext)**<br>
 Mapeamento relacional completo com mais de 10 migrações incrementais documentando a evolução do schema.
 
-<details>
-<summary>Arquitetura</summary>
+## Arquitetura
+
 
 ```mermaid
 flowchart LR
@@ -54,10 +52,9 @@ flowchart LR
     E --> F["(SQL Server)"]
 ```
 
-</details>
 
-<details>
-<summary>Estrutura do repositório</summary>
+## Estrutura do repositório
+
 
 ```text
 ProjetoPWEnquete/
@@ -73,7 +70,6 @@ ProjetoPWEnquete/
 └── README.md
 ```
 
-</details>
 
 <a id="como-executar"></a>
 
@@ -91,10 +87,16 @@ ProjetoPWEnquete/
    dotnet run --project ProjetoPWEnquete/ProjetoPWEnquete.csproj
    ```
 
-<p align="center"><img src="assets/identity/divider.svg" alt="" width="100%"></p>
+---
 
 <p align="center">
   <a href="https://github.com/arthurlynow098">GitHub</a> &nbsp;·&nbsp;
   <a href="https://arthurentsev.vercel.app/">Portfólio</a> &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/in/entsevarthur/">LinkedIn</a>
 </p>
+
+## Identidade visual e créditos
+
+**Suricato** — Atenção coletiva e participação em grupo. [Logo em PNG](assets/identity-v2/logo.png).
+
+Identidade organizada a partir das artes fornecidas por Arthur Entsev. Direção visual e organização documental inspiradas em [LynowCut](https://github.com/arthurlynow098/LynowCut) e [LynowCatch](https://github.com/arthurlynow098/LynowCatch). Tipografia **Inter**, com licença SIL Open Font License em [Inter-OFL.txt](assets/identity-v2/Inter-OFL.txt).
