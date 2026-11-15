@@ -21,9 +21,9 @@
 <p><img src="assets/identity-v2/section-01.svg" alt="Por onde começar" width="100%"></p>
 
 
-- **[Enquetes](ProjetoPWEnquete/Controllers/EnqueteController.cs)** — Ações relacionadas às enquetes.
-- **[Banco de dados](ProjetoPWEnquete/Data/AppDbContext.cs)** — Contexto de persistência da aplicação.
-- **[Conta](ProjetoPWEnquete/Controllers/AccountController.cs)** — Ações relacionadas ao acesso dos usuários.
+- **[Enquetes](ProjetoPWEnquete/Controllers/EnqueteController.cs)**, ações relacionadas às enquetes.
+- **[Banco de dados](ProjetoPWEnquete/Data/AppDbContext.cs)**, contexto de persistência da aplicação.
+- **[Conta](ProjetoPWEnquete/Controllers/AccountController.cs)**, ações relacionadas ao acesso dos usuários.
 
 
 <a id="visão-geral"></a>
@@ -94,13 +94,13 @@ ProjetoPWEnquete/
 
 <p><img src="assets/identity-v2/section-06.svg" alt="Como executar" width="100%"></p>
 
-1. Clone o repositório:
+1. Clone o repositório
    ```powershell
    git clone https://github.com/arthurlynow098/ProjetoPWEnquete.git
    cd ProjetoPWEnquete
    ```
 2. Configure sua string de conexão do **SQL Server** em ProjetoPWEnquete/appsettings.json.
-3. Aplique as migrações e inicie a aplicação:
+3. Aplique as migrações e inicie a aplicação
    ```powershell
    dotnet ef database update --project ProjetoPWEnquete
    dotnet run --project ProjetoPWEnquete/ProjetoPWEnquete.csproj
@@ -120,6 +120,6 @@ ProjetoPWEnquete/
 
 <table><tr><td width="150"><img src="assets/identity-v2/logo.png" alt="Suricato" width="130"></td><td><strong>Suricato</strong><br>Atenção coletiva e participação em grupo.<br><br><a href="assets/identity-v2/logo.png">Logo em PNG</a> · <a href="assets/identity-v2/banner.png">Banner em PNG</a></td></tr></table>
 
-Artes da coleção fornecida por **Arthur Entsev**, com adaptação das logos e acabamento dos banners realizados com auxílio de geração de imagens. Referências de identidade e apresentação: [LynowCut](https://github.com/arthurlynow098/LynowCut), [LynowMic](https://github.com/arthurlynow098/LynowMic) e [LynowCatch](https://github.com/arthurlynow098/LynowCatch). Os créditos e avisos do conteúdo original foram preservados.
+Artes da coleção fornecida por **Arthur Entsev**, com adaptação das logos e acabamento dos banners realizados com auxílio de geração de imagens. Referências de identidade e apresentação, [LynowCut](https://github.com/arthurlynow098/LynowCut), [LynowMic](https://github.com/arthurlynow098/LynowMic) e [LynowCatch](https://github.com/arthurlynow098/LynowCatch). Os créditos e avisos do conteúdo original foram preservados.
 
 <p align="center"><a href="#top">Voltar ao topo ↑</a> · <a href="https://github.com/arthurlynow098">Arthur Entsev</a> · <a href="https://arthurentsev.vercel.app/">Portfólio</a></p>
